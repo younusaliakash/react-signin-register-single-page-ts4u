@@ -1,0 +1,8 @@
+p {
+  font-size: $text-medium;
+  color: $text-navy;
+  padding: 4px 0;
+  @include breakpoints(smTablet) {
+    font-size: $text-small;
+  }
+}

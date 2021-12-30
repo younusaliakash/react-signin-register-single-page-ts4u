@@ -1,0 +1,16 @@
+.register_form_wrapper {
+  form {
+    .input_field_wrapper {
+      padding: 0.5rem 0;
+      .input_icon {
+        padding-right: 10px;
+        color: $text-gray;
+      }
+    }
+    .form_submit_btn {
+      button {
+        @include authSubmitBtnStyle(); //import from global scss//
+      }
+    }
+  }
+}

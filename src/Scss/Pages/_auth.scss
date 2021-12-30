@@ -1,0 +1,91 @@
+.auth {
+  background: $bg-ghost-white;
+  width: 100%;
+  min-height: 100vh;
+  .container {
+    height: 100%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include breakpoints(smLaptop) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    .auth_container_left {
+      align-self: center; //grid use//
+      // width: 50%;
+      display: flex;
+      background: $bg-ghost-white;
+      justify-content: center;
+      @include breakpoints(smLaptop) {
+        // background: $bg-ghost-white;
+        justify-self: center;
+        margin: 1.5rem 0;
+      }
+      img {
+        width: 80%;
+      }
+    }
+    .auth_container_right {
+      // width: 50%;
+      align-self: center; //grid use//
+      @include breakpoints(smTablet) {
+        background: $bg-ghost-white;
+      }
+      .content_box {
+        width: 80%;
+        margin: auto auto;
+        @include breakpoints(smLaptop) {
+          width: 95%;
+          margin: 0 auto;
+        }
+        .content_box_wrapper {
+          width: 70%;
+          margin: 0 auto;
+          padding: 2.45rem 0;
+          @include breakpoints(smLaptop) {
+            width: 90%;
+          }
+          h3 {
+            text-align: center;
+            font-size: $text-extra-large;
+            @include breakpoints(smTablet) {
+              font-size: $text-small;
+            }
+          }
+          .box_switch_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+            .box-switch_option_wrapper {
+              width: 100%;
+              display: flex;
+              button {
+                width: 50%;
+                font-size: $text-medium;
+                font-weight: 550;
+                padding: 12px 30px;
+                background: $bg-gray;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                @include breakpoints(smTablet) {
+                  font-size: $text-small;
+                  padding: 10px 0;
+                }
+              }
+              .active {
+                color: $text-white;
+                border-radius: $default-radius;
+                background: $bg-tiffany-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

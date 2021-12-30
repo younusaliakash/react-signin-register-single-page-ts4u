@@ -1,0 +1,30 @@
+.google_signIn_btn_container {
+  padding: 0.75rem 0;
+  .google_signIn_btn {
+    background: $bg-blueberry;
+    border-radius: $default-radius;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .google_icon {
+      flex: 0.08;
+      background: $bg-white;
+      display: inline-block;
+      border-radius: $default-radius;
+      margin: 2px;
+      display: flex;
+      img {
+        padding: 5px;
+      }
+    }
+    .google_login_btn {
+      flex: 0.8;
+      color: $text-white;
+      font-size: $text-medium;
+      text-align: center;
+      @include breakpoints(smTablet) {
+        font-size: $text-small;
+      }
+    }
+  }
+}

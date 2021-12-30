@@ -1,0 +1,30 @@
+.sign_in_form_wrapper {
+  form {
+    .input_field_wrapper {
+      padding: 0.5rem 0;
+      .input_icon {
+        padding-right: 10px;
+        color: $text-gray;
+      }
+    }
+    .form_submit_btn {
+      button {
+        @include authSubmitBtnStyle(); //import from global scss//
+      }
+    }
+  }
+  .forgot_password {
+    p {
+      text-align: center;
+      font-size: $text-medium;
+      user-select: none;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      @include breakpoints(smTablet) {
+        font-size: $text-small;
+      }
+    }
+  }
+}

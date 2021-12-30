@@ -1,0 +1,12 @@
+//For Every Input area background
+.input_area {
+  background: $bg-gray;
+  border-radius: $default-radius;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 12px;
+  @include breakpoints(smTablet) {
+    padding: 14px 10px;
+  }
+}

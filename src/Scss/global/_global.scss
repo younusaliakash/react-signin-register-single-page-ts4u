@@ -1,0 +1,26 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+//reuseable scss
+@mixin authSubmitBtnStyle {
+  outline: none;
+  border: none;
+  width: 100%;
+  background: $bg-tiffany-blue;
+  padding: 12px 0;
+  margin: 1rem 0;
+  border-radius: $default-radius;
+  color: $text-white;
+  font-size: $text-medium;
+  font-weight: 600;
+  cursor: pointer;
+  @include breakpoints(smTablet) {
+    font-size: $text-small;
+    padding: 10px 0;
+  }
+}
